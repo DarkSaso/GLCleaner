@@ -17,7 +17,6 @@ print("if you have already read that section you can click ENTER to continue")
 input("Press ENTER to continue...")
 clls()
 #code
-print(f_content)
 print("░█▀▀█ ░█─── ░█▀▀█")
 print("░█─▄▄ ░█─── ░█───")
 print("░█▄▄█ ░█▄▄█ ░█▄▄█")
@@ -53,24 +52,7 @@ if(start == "2"):
     else:
         clls()
         print("you have chosen not to continue with the cleaning if you want to clean your recycle bin, restart the program and type {accept}")
-if(start == "3"):
-    print("This type of cleaning will delete files in the bin so you have to accept by typing 'accept' ")
-    acc2 = input(".")
-    if(acc2 == "accept"):
-        try:
-            print("Process started!")
-            binclear()
-            clear()
-            dnscls()
-            clls()
-            print("Completed :D\nSupport\nTelegram: @DarkSaso\n\nThe Program Will be closed in 5sec")
-        except:
-            clls()
-            print("Error(glc:execution_error): contact @DarkSaso on telegram or github")
-    else:
-        clls()
-        print("you have chosen not to continue with the cleaning if you want to clean your recycle bin, restart the program and type {accept}")
-if(start > str(3)):
+if(start > str(2)):
     clls()
     print("This selection is not present or it will come with an upcoming update\n :(")
 time.sleep(5)
